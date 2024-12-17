@@ -52,6 +52,7 @@ function ProblemPage() {
     }
   };
 
+  // Accept all strings that do not contain 'ab'
   const checkProblem1 = () => {
     if (!input.includes("ab")) {
       setResult("Accepted");
@@ -65,6 +66,7 @@ function ProblemPage() {
     }
   };
 
+  // Accept all strings where 'b' is never tripled
   const checkProblem2 = () => {
     const bCount = (input.match(/b/g) || []).length;
     if (bCount <= 2) {
