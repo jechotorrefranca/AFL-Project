@@ -176,7 +176,9 @@ function ProblemPage() {
               {result}
             </div>
 
-            <div className="text-xl font-bold tracking-widest">{final}</div>
+            <div className="text-xl font-bold tracking-widest break-words">
+              {final}
+            </div>
           </div>
         )}
       </div>
